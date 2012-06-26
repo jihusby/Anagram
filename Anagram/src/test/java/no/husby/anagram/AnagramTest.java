@@ -20,4 +20,11 @@ public class AnagramTest extends TestCase {
         Anagram a = new Anagram();
         assertEquals("", a.getAnagram(""));
     }
+    
+    public void testOneCharAnagram() throws Exception {
+        Anagram a = new Anagram();
+        String input = "a";
+        assertEquals(input, a.getAnagram(input));
+    }
+    
 }
